@@ -1,15 +1,11 @@
-module { name = 'platform',
-   projects = {
-      lib {
-         src = {
-            'src/*.cpp',
-            'src/native/*.cpp',
-            'src/native/' .. toolchain .. '/*.cpp',
-            pch = 'src/pch.cpp'
-         },
-         preprocessor = {
-            'BE_PLATFORM_IMPL'
-         }
-      }
+module 'platform' {
+   lib {
+      src {
+         'src/*.cpp',
+         'src/native/*.cpp',
+         'src/native/$(toolchain)/*.cpp',
+      },
+      pch_src 'src/pch.cpp',
+      define 'BE_PLATFORM_IMPL'
    }
 }
