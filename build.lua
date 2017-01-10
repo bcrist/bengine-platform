@@ -6,6 +6,9 @@ module 'platform' {
          'src/native/$(toolchain)/*.cpp',
       },
       pch_src 'src/pch.cpp',
-      define 'BE_PLATFORM_IMPL'
+      define 'BE_PLATFORM_IMPL',
+      link_project {
+         'core', 'glfw'
+      }
    }
 }
