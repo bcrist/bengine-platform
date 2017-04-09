@@ -60,6 +60,7 @@
     <ClInclude Include="include\lifecycle.hpp" />
     <ClInclude Include="include\platform_autolink.hpp" />
     <ClInclude Include="include\ids.hpp" />
+    <ClInclude Include="include\version.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\native\vc_win\lifecycle.cpp" />
