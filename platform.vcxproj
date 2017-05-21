@@ -13,7 +13,7 @@
   <PropertyGroup Label="Globals">
     <ProjectName>platform</ProjectName>
     <RootNamespace>platform</RootNamespace>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
     <ProjectGuid>{38702887-3979-47B0-8185-0FCFFE453261}</ProjectGuid>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
