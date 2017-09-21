@@ -6,8 +6,5 @@
 #include <be/core/autolink.hpp>
 
 #include <GLFW/glfw3.h>
-#if defined(APIENTRY) && !defined(_MINWINDEF_)
-#  undef APIENTRY
-#endif
 
 #endif
