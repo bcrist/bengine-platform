@@ -58,7 +58,6 @@
     <ClInclude Include="include\native\vc_win\glfw.hpp" />
     <ClInclude Include="src\pch.hpp" />
     <ClInclude Include="include\lifecycle.hpp" />
-    <ClInclude Include="include\platform_autolink.hpp" />
     <ClInclude Include="include\ids.hpp" />
     <ClInclude Include="include\version.hpp" />
   </ItemGroup>

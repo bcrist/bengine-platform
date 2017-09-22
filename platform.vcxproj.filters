@@ -32,9 +32,6 @@
     <ClInclude Include="include\glfw.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\platform_autolink.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="include\ids.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
