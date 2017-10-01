@@ -10,7 +10,7 @@ module 'platform' {
       },
       define 'BE_PLATFORM_IMPL',
       link_project {
-         'core', 'glfw'
+         'core', 'gfx'
       }
    }
 }
