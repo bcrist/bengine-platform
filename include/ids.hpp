@@ -4,4 +4,6 @@
 #define BE_PLATFORM_IDS_HPP_
 #endif
 
+#include "monitor_id_types.hpp"
+
 #endif

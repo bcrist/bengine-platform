@@ -3,6 +3,9 @@
 
 #include "lifecycle.hpp"
 #include "ids.hpp"
+#include "service_monitor_manager.hpp"
+#include "monitor_manager.hpp"
+#include "service_window.hpp"
 #include <be/core/logging.hpp>
 
 #include BE_NATIVE_CORE(vc_win_win32.hpp)
@@ -12,7 +15,7 @@ LRESULT CALLBACK window_proc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
    return glfwHandleWin32Message(hWnd, uMsg, wParam, lParam);
 }
 
-namespace be {
+namespace be::platform {
 
 void glfw_error(int error, const char* description) {
    be_error() << "GLFW Error!"
@@ -32,13 +35,17 @@ bool platform_setup() {
 
    be_short_log(v::verbose) << "GLFW Initialized." | default_log();
 
+   service<MonitorManager>();
+
    return true;
 }
 
 void platform_shutdown() {
+   shutdown_service<Window>();
+   shutdown_service<MonitorManager>();
    glfwTerminate();
 }
 
-} // be
+} // be::platform
 
 #endif

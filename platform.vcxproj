@@ -13,7 +13,7 @@
   <PropertyGroup Label="Globals">
     <ProjectName>platform</ProjectName>
     <RootNamespace>platform</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
     <ProjectGuid>{38702887-3979-47B0-8185-0FCFFE453261}</ProjectGuid>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -54,21 +54,53 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="include\glfw.hpp" />
+    <ClInclude Include="include\context_profile_type.hpp" />
+    <ClInclude Include="include\glfw_window.hpp" />
+    <ClInclude Include="include\monitor.hpp" />
+    <ClInclude Include="include\monitor_gamma.hpp" />
+    <ClInclude Include="include\monitor_ids.hpp" />
+    <ClInclude Include="include\monitor_id_types.hpp" />
+    <ClInclude Include="include\monitor_manager.hpp" />
+    <ClInclude Include="include\monitor_mode.hpp" />
+    <ClInclude Include="include\monitor_modes.hpp" />
     <ClInclude Include="include\native\vc_win\glfw.hpp" />
+    <ClInclude Include="include\service_monitor_manager.hpp" />
+    <ClInclude Include="include\service_window.hpp" />
+    <ClInclude Include="include\v_sync_mode.hpp" />
+    <ClInclude Include="include\window.hpp" />
+    <ClInclude Include="include\window_flags.hpp" />
+    <ClInclude Include="include\window_params.hpp" />
+    <ClInclude Include="src\native\native_monitor.hpp" />
     <ClInclude Include="src\pch.hpp" />
     <ClInclude Include="include\lifecycle.hpp" />
     <ClInclude Include="include\ids.hpp" />
     <ClInclude Include="include\version.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\context_profile_type.cpp" />
+    <ClCompile Include="src\glfw_window.cpp" />
+    <ClCompile Include="src\monitor.cpp" />
+    <ClCompile Include="src\monitor_gamma.cpp" />
+    <ClCompile Include="src\monitor_manager.cpp" />
     <ClCompile Include="src\native\vc_win\lifecycle.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\native\vc_win\monitor.cpp">
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="src\pch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="src\ids.cpp" />
+    <ClCompile Include="src\v_sync_mode.cpp" />
+    <ClCompile Include="src\window.cpp" />
+    <ClCompile Include="src\window_flags.cpp" />
+    <ClCompile Include="src\window_params.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="meta\context_profile_type.lua" />
+    <None Include="meta\v_sync_mode.lua" />
+    <None Include="meta\window_flags.lua" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

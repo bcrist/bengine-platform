@@ -21,6 +21,21 @@
     <Filter Include="Header Files\native\vc_win">
       <UniqueIdentifier>{71789321-0518-4c18-878e-c90ce2999df6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Meta-Source Files">
+      <UniqueIdentifier>{b8871e6e-ac09-4d00-b1cc-04106469c98a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\wnd">
+      <UniqueIdentifier>{b9b08605-0c4e-43eb-ab18-b7503af36b1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\wnd">
+      <UniqueIdentifier>{8676067e-8d51-4474-b697-9e1b320012a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\monitor">
+      <UniqueIdentifier>{6ce48cdb-4151-4bea-a349-eb8973254943}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\monitor">
+      <UniqueIdentifier>{6366d10c-26d6-4482-b55e-7feb97e1e522}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\pch.hpp">
@@ -28,9 +43,6 @@
     </ClInclude>
     <ClInclude Include="include\native\vc_win\glfw.hpp">
       <Filter>Header Files\native\vc_win</Filter>
-    </ClInclude>
-    <ClInclude Include="include\glfw.hpp">
-      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\ids.hpp">
       <Filter>Header Files</Filter>
@@ -40,6 +52,54 @@
     </ClInclude>
     <ClInclude Include="include\version.hpp">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\context_profile_type.hpp">
+      <Filter>Header Files\wnd</Filter>
+    </ClInclude>
+    <ClInclude Include="include\v_sync_mode.hpp">
+      <Filter>Header Files\wnd</Filter>
+    </ClInclude>
+    <ClInclude Include="include\window_flags.hpp">
+      <Filter>Header Files\wnd</Filter>
+    </ClInclude>
+    <ClInclude Include="include\window_params.hpp">
+      <Filter>Header Files\wnd</Filter>
+    </ClInclude>
+    <ClInclude Include="include\window.hpp">
+      <Filter>Header Files\wnd</Filter>
+    </ClInclude>
+    <ClInclude Include="include\glfw_window.hpp">
+      <Filter>Header Files\wnd</Filter>
+    </ClInclude>
+    <ClInclude Include="include\monitor.hpp">
+      <Filter>Header Files\monitor</Filter>
+    </ClInclude>
+    <ClInclude Include="include\monitor_manager.hpp">
+      <Filter>Header Files\monitor</Filter>
+    </ClInclude>
+    <ClInclude Include="include\service_monitor_manager.hpp">
+      <Filter>Header Files\monitor</Filter>
+    </ClInclude>
+    <ClInclude Include="include\service_window.hpp">
+      <Filter>Header Files\wnd</Filter>
+    </ClInclude>
+    <ClInclude Include="include\monitor_mode.hpp">
+      <Filter>Header Files\monitor</Filter>
+    </ClInclude>
+    <ClInclude Include="include\monitor_modes.hpp">
+      <Filter>Header Files\monitor</Filter>
+    </ClInclude>
+    <ClInclude Include="include\monitor_ids.hpp">
+      <Filter>Header Files\monitor</Filter>
+    </ClInclude>
+    <ClInclude Include="include\monitor_gamma.hpp">
+      <Filter>Header Files\monitor</Filter>
+    </ClInclude>
+    <ClInclude Include="src\native\native_monitor.hpp">
+      <Filter>Source Files\native</Filter>
+    </ClInclude>
+    <ClInclude Include="include\monitor_id_types.hpp">
+      <Filter>Header Files\monitor</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -52,5 +112,46 @@
     <ClCompile Include="src\native\vc_win\lifecycle.cpp">
       <Filter>Source Files\native\vc_win</Filter>
     </ClCompile>
+    <ClCompile Include="src\context_profile_type.cpp">
+      <Filter>Source Files\wnd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glfw_window.cpp">
+      <Filter>Source Files\wnd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\v_sync_mode.cpp">
+      <Filter>Source Files\wnd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\window_flags.cpp">
+      <Filter>Source Files\wnd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\window_params.cpp">
+      <Filter>Source Files\wnd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\window.cpp">
+      <Filter>Source Files\wnd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\monitor_gamma.cpp">
+      <Filter>Source Files\monitor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\monitor.cpp">
+      <Filter>Source Files\monitor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\monitor_manager.cpp">
+      <Filter>Source Files\monitor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\native\vc_win\monitor.cpp">
+      <Filter>Source Files\native\vc_win</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="meta\window_flags.lua">
+      <Filter>Meta-Source Files</Filter>
+    </None>
+    <None Include="meta\context_profile_type.lua">
+      <Filter>Meta-Source Files</Filter>
+    </None>
+    <None Include="meta\v_sync_mode.lua">
+      <Filter>Meta-Source Files</Filter>
+    </None>
   </ItemGroup>
 </Project>
